@@ -1,0 +1,271 @@
+[Executing]:
+make -f /home/justin/work/opentitan/hw/dv/tools/dvsim/sim.mk build build_cmd=vcs build_dir=/home/justin/work/opentitan/scratch/master/spi_device_1r1w-sim-vcs/cover_reg_top build_opts='+define+SRAM_TYPE=spi_device_pkg::SramType1r1w +define+UVM +define+UVM_NO_DEPRECATED +define+UVM_REGEX_NO_DPI +define+UVM_REG_ADDR_WIDTH=32 +define+UVM_REG_DATA_WIDTH=32 +define+UVM_REG_BYTENABLE_WIDTH=4 +define+SIMULATION +define+DUT_HIER=tb.dut -sverilog -full64 -licqueue -ntb_opts uvm-1.2 -timescale=1ns/1ps -Mdir=/home/justin/work/opentitan/scratch/master/spi_device_1r1w-sim-vcs/cover_reg_top/simv.csrc -o /home/justin/work/opentitan/scratch/master/spi_device_1r1w-sim-vcs/cover_reg_top/simv -f /home/justin/work/opentitan/scratch/master/spi_device_1r1w-sim-vcs/cover_reg_top/fusesoc-work/lowrisc_dv_spi_device_sim_0.1.scr  -lca -top spi_device_bind -top sec_cm_prim_onehot_check_bind -top tb +incdir+/home/justin/work/opentitan/scratch/master/spi_device_1r1w-sim-vcs/cover_reg_top +warn=SV-NFIVC +warn=noUII-L +warn=noLCA_FEATURES_ENABLED +warn=noBNA -assert svaext -xlrm uniq_prior_final -Xcflags='"'"'-Wno-error=implicit-function-declaration -Wno-error=int-conversion'"'"' -CFLAGS --std=c99 -CFLAGS -fno-extended-identifiers -CFLAGS --std=c++17 -LDFLAGS -Wl,--no-as-needed -debug_region=cell+lib -debug_access+f +define+VCS -error=IPDW -error=UPF_ISPND -error=IGPA -error=PCSRMIO -error=AOUP -error=ELW_UNBOUND -error=IUWI -error=INAV -error=SV-ISC -error=OSVF-NPVIUFPI -error=DPIMI -error=IPDASP -error=CM-HIER-FNF -error=CWUC -error=MATN -error=STASKW_NDTAZ1 -error=TMPO -error=SV-OHCM -error=ENUMASSIGN -error=TEIF -deraceclockdata -kdb -debug_access' post_build_cmds='' pre_build_cmds='' proj_root=/home/justin/work/opentitan sv_flist_gen_cmd=fusesoc sv_flist_gen_dir=/home/justin/work/opentitan/scratch/master/spi_device_1r1w-sim-vcs/cover_reg_top/fusesoc-work sv_flist_gen_opts='--cores-root /home/justin/work/opentitan/hw run --mapping=lowrisc:prim_generic:all:0.1 --target=sim --work-root=/home/justin/work/opentitan/scratch/master/spi_device_1r1w-sim-vcs/cover_reg_top/fusesoc-work --setup lowrisc:dv:spi_device_sim:0.1'
+
+
+[make]: pre_build
+mkdir -p /home/justin/work/opentitan/scratch/master/spi_device_1r1w-sim-vcs/cover_reg_top
+
+[make]: gen_sv_flist
+cd /home/justin/work/opentitan/scratch/master/spi_device_1r1w-sim-vcs/cover_reg_top && fusesoc --cores-root /home/justin/work/opentitan/hw run --mapping=lowrisc:prim_generic:all:0.1 --target=sim --work-root=/home/justin/work/opentitan/scratch/master/spi_device_1r1w-sim-vcs/cover_reg_top/fusesoc-work --setup lowrisc:dv:spi_device_sim:0.1
+WARNING: Replacing lowrisc:dv:spi_device_ral_pkg:0 in /home/justin/work/opentitan/hw/ip/spi_device/dv with the version found in /home/justin/work/opentitan/hw/dv/sv/spi_agent
+INFO: Mapped lowrisc:prim:flop:0 to lowrisc:prim_generic:flop:0.
+INFO: Mapped lowrisc:prim:clock_inv:0 to lowrisc:prim_generic:clock_inv:0.
+INFO: Mapped lowrisc:prim:clock_buf:0 to lowrisc:prim_generic:clock_buf:0.
+INFO: Mapped lowrisc:prim:buf:0 to lowrisc:prim_generic:buf:0.
+INFO: Mapped lowrisc:prim:buf:0 to lowrisc:prim_generic:buf:0.
+INFO: Mapped lowrisc:prim:flop_2sync:0 to lowrisc:prim_generic:flop_2sync:0.
+INFO: Mapped lowrisc:prim:buf:0 to lowrisc:prim_generic:buf:0.
+INFO: Mapped lowrisc:prim:buf:0 to lowrisc:prim_generic:buf:0.
+INFO: Mapped lowrisc:prim:flop:0 to lowrisc:prim_generic:flop:0.
+INFO: Mapped lowrisc:prim:flop_2sync:0 to lowrisc:prim_generic:flop_2sync:0.
+INFO: Mapped lowrisc:prim:buf:0 to lowrisc:prim_generic:buf:0.
+INFO: Mapped lowrisc:prim:ram_2p:0 to lowrisc:prim_generic:ram_2p:0.
+INFO: Mapped lowrisc:prim:rom:0 to lowrisc:prim_generic:rom:0.
+INFO: Mapped lowrisc:prim:flop:0 to lowrisc:prim_generic:flop:0.
+INFO: Mapped lowrisc:prim:buf:0 to lowrisc:prim_generic:buf:0.
+INFO: Mapped lowrisc:prim:flop:0 to lowrisc:prim_generic:flop:0.
+INFO: Mapped lowrisc:prim:flop_2sync:0 to lowrisc:prim_generic:flop_2sync:0.
+INFO: Mapped lowrisc:prim:ram_1r1w:0 to lowrisc:prim_generic:ram_1r1w:0.
+INFO: Mapped lowrisc:prim:buf:0 to lowrisc:prim_generic:buf:0.
+INFO: Mapped lowrisc:prim:clock_gating:0 to lowrisc:prim_generic:clock_gating:0.
+INFO: Mapped lowrisc:prim:flop_2sync:0 to lowrisc:prim_generic:flop_2sync:0.
+INFO: Mapped lowrisc:prim:xnor2:0 to lowrisc:prim_generic:xnor2:0.
+INFO: Mapped lowrisc:prim:flop:0 to lowrisc:prim_generic:flop:0.
+INFO: Mapped lowrisc:prim:flop_2sync:0 to lowrisc:prim_generic:flop_2sync:0.
+INFO: Mapped lowrisc:prim:flop_2sync:0 to lowrisc:prim_generic:flop_2sync:0.
+INFO: Mapped lowrisc:prim:buf:0 to lowrisc:prim_generic:buf:0.
+INFO: Mapped lowrisc:prim:ram_1p:0 to lowrisc:prim_generic:ram_1p:0.
+INFO: Mapped lowrisc:prim:pad_wrapper:0 to lowrisc:prim_generic:pad_wrapper:0.
+INFO: Mapped lowrisc:prim:clock_mux2:0 to lowrisc:prim_generic:clock_mux2:0.
+INFO: Mapped lowrisc:prim:clock_inv:0 to lowrisc:prim_generic:clock_inv:0.
+INFO: Mapped lowrisc:prim:const:0 to lowrisc:prim_generic:const:0.
+INFO: Mapped lowrisc:prim:const_sec:0 to lowrisc:prim_generic:const_sec:0.
+INFO: Mapped lowrisc:prim:buf:0 to lowrisc:prim_generic:buf:0.
+INFO: Mapped lowrisc:prim:flop:0 to lowrisc:prim_generic:flop:0.
+INFO: Mapped lowrisc:prim:flop_en:0 to lowrisc:prim_generic:flop_en:0.
+INFO: Mapped lowrisc:prim:flop_2sync:0 to lowrisc:prim_generic:flop_2sync:0.
+INFO: Mapped lowrisc:prim:flop_no_rst:0 to lowrisc:prim_generic:flop_no_rst:0.
+INFO: Mapped lowrisc:prim:rst_sync:0 to lowrisc:prim_generic:rst_sync:0.
+INFO: Mapped lowrisc:prim:xor2:0 to lowrisc:prim_generic:xor2:0.
+INFO: Mapped lowrisc:prim:xnor2:0 to lowrisc:prim_generic:xnor2:0.
+INFO: Mapped lowrisc:prim:and2:0 to lowrisc:prim_generic:and2:0.
+INFO: Mapped lowrisc:prim:flop_2sync:0 to lowrisc:prim_generic:flop_2sync:0.
+INFO: Mapped lowrisc:prim:and2:0 to lowrisc:prim_generic:and2:0.
+INFO: Mapped lowrisc:prim:buf:0 to lowrisc:prim_generic:buf:0.
+INFO: Mapped lowrisc:prim:buf:0 to lowrisc:prim_generic:buf:0.
+INFO: Mapped lowrisc:prim:flop:0 to lowrisc:prim_generic:flop:0.
+INFO: Mapped lowrisc:prim:buf:0 to lowrisc:prim_generic:buf:0.
+INFO: Mapped lowrisc:prim:flop_en:0 to lowrisc:prim_generic:flop_en:0.
+INFO: Mapped lowrisc:prim:flop:0 to lowrisc:prim_generic:flop:0.
+INFO: Mapped lowrisc:prim:ram_1p:0 to lowrisc:prim_generic:ram_1p:0.
+INFO: Mapped lowrisc:prim:clock_mux2:0 to lowrisc:prim_generic:clock_mux2:0.
+INFO: Mapped lowrisc:prim:clock_mux2:0 to lowrisc:prim_generic:clock_mux2:0.
+INFO: Mapped lowrisc:prim:flop_2sync:0 to lowrisc:prim_generic:flop_2sync:0.
+INFO: Mapped lowrisc:prim:flop:0 to lowrisc:prim_generic:flop:0.
+INFO: Mapped lowrisc:prim:clock_inv:0 to lowrisc:prim_generic:clock_inv:0.
+INFO: Mapped lowrisc:prim:clock_buf:0 to lowrisc:prim_generic:clock_buf:0.
+INFO: Mapped lowrisc:prim:flop_en:0 to lowrisc:prim_generic:flop_en:0.
+INFO: Mapped lowrisc:prim:clock_mux2:0 to lowrisc:prim_generic:clock_mux2:0.
+INFO: Mapped lowrisc:prim:clock_mux2:0 to lowrisc:prim_generic:clock_mux2:0.
+INFO: Mapped lowrisc:prim:clock_buf:0 to lowrisc:prim_generic:clock_buf:0.
+INFO: Mapped lowrisc:prim:clock_gating:0 to lowrisc:prim_generic:clock_gating:0.
+INFO: Mapped lowrisc:prim:clock_inv:0 to lowrisc:prim_generic:clock_inv:0.
+INFO: Mapped lowrisc:prim:rst_sync:0 to lowrisc:prim_generic:rst_sync:0.
+INFO: Mapped lowrisc:prim:clock_gating:0 to lowrisc:prim_generic:clock_gating:0.
+INFO: Mapped lowrisc:prim:flop:0 to lowrisc:prim_generic:flop:0.
+INFO: Mapped lowrisc:prim:clock_gating:0 to lowrisc:prim_generic:clock_gating:0.
+INFO: Mapped lowrisc:prim:clock_inv:0 to lowrisc:prim_generic:clock_inv:0.
+INFO: Mapped lowrisc:prim:clock_div:0 to lowrisc:prim_generic:clock_div:0.
+INFO: Mapped lowrisc:prim:flash:0 to lowrisc:prim_generic:flash:0.
+INFO: Mapped lowrisc:prim:usb_diff_rx:0 to lowrisc:prim_generic:usb_diff_rx:0.
+INFO: Mapped lowrisc:prim:clock_buf:0 to lowrisc:prim_generic:clock_buf:0.
+INFO: Mapped lowrisc:prim:clock_div:0 to lowrisc:prim_generic:clock_div:0.
+INFO: Mapped lowrisc:prim:clock_gating:0 to lowrisc:prim_generic:clock_gating:0.
+INFO: Mapped lowrisc:prim:clock_inv:0 to lowrisc:prim_generic:clock_inv:0.
+INFO: Mapped lowrisc:prim:prim_pkg:0 to lowrisc:prim_generic:prim_pkg:0.
+INFO: Mapped lowrisc:prim:clock_gating:0 to lowrisc:prim_generic:clock_gating:0.
+INFO: Mapped lowrisc:prim:buf:0 to lowrisc:prim_generic:buf:0.
+INFO: Mapped lowrisc:prim:buf:0 to lowrisc:prim_generic:buf:0.
+INFO: Mapped lowrisc:prim:clock_buf:0 to lowrisc:prim_generic:clock_buf:0.
+INFO: Mapped lowrisc:prim:clock_div:0 to lowrisc:prim_generic:clock_div:0.
+INFO: Mapped lowrisc:prim:clock_gating:0 to lowrisc:prim_generic:clock_gating:0.
+INFO: Mapped lowrisc:prim:ram_1p:0 to lowrisc:prim_generic:ram_1p:0.
+INFO: Mapped lowrisc:prim:buf:0 to lowrisc:prim_generic:buf:0.
+INFO: Mapped lowrisc:prim:flop:0 to lowrisc:prim_generic:flop:0.
+INFO: Mapped lowrisc:prim:prim_pkg:0 to lowrisc:prim_generic:prim_pkg:0.
+INFO: Mapped lowrisc:prim:clock_mux2:0 to lowrisc:prim_generic:clock_mux2:0.
+INFO: Mapped lowrisc:prim:clock_buf:0 to lowrisc:prim_generic:clock_buf:0.
+INFO: Mapped lowrisc:prim:flop_2sync:0 to lowrisc:prim_generic:flop_2sync:0.
+INFO: Mapped lowrisc:prim:clock_buf:0 to lowrisc:prim_generic:clock_buf:0.
+INFO: Mapped lowrisc:prim:buf:0 to lowrisc:prim_generic:buf:0.
+INFO: Mapped lowrisc:prim:pad_attr:0 to lowrisc:prim_generic:pad_attr:0.
+INFO: Mapped lowrisc:prim:clock_buf:0 to lowrisc:prim_generic:clock_buf:0.
+INFO: Mapped lowrisc:prim:flash:0 to lowrisc:prim_generic:flash:0.
+INFO: Mapped lowrisc:prim:flop_2sync:0 to lowrisc:prim_generic:flop_2sync:0.
+INFO: Mapped lowrisc:prim:prim_pkg:0 to lowrisc:prim_generic:prim_pkg:0.
+INFO: Mapped lowrisc:prim:ram_1p:0 to lowrisc:prim_generic:ram_1p:0.
+INFO: Mapped lowrisc:prim:clock_inv:0 to lowrisc:prim_generic:clock_inv:0.
+INFO: Mapped lowrisc:prim:clock_gating:0 to lowrisc:prim_generic:clock_gating:0.
+INFO: Mapped lowrisc:prim:and2:0 to lowrisc:prim_generic:and2:0.
+INFO: Mapped lowrisc:prim:buf:0 to lowrisc:prim_generic:buf:0.
+INFO: Mapped lowrisc:prim:clock_mux2:0 to lowrisc:prim_generic:clock_mux2:0.
+INFO: Mapped lowrisc:prim:flop:0 to lowrisc:prim_generic:flop:0.
+INFO: Mapped lowrisc:prim:clock_div:0 to lowrisc:prim_generic:clock_div:0.
+INFO: Mapped lowrisc:prim:clock_buf:0 to lowrisc:prim_generic:clock_buf:0.
+INFO: Mapped lowrisc:prim:clock_div:0 to lowrisc:prim_generic:clock_div:0.
+INFO: Mapped lowrisc:prim:clock_gating:0 to lowrisc:prim_generic:clock_gating:0.
+INFO: Mapped lowrisc:prim:clock_inv:0 to lowrisc:prim_generic:clock_inv:0.
+INFO: Mapped lowrisc:prim:prim_pkg:0 to lowrisc:prim_generic:prim_pkg:0.
+INFO: Mapped lowrisc:prim:prim_pkg:0 to lowrisc:prim_generic:prim_pkg:0.
+INFO: Mapped lowrisc:prim:clock_gating:0 to lowrisc:prim_generic:clock_gating:0.
+INFO: Mapped lowrisc:prim:buf:0 to lowrisc:prim_generic:buf:0.
+INFO: Mapped lowrisc:prim:buf:0 to lowrisc:prim_generic:buf:0.
+INFO: Mapped lowrisc:prim:clock_buf:0 to lowrisc:prim_generic:clock_buf:0.
+INFO: Mapped lowrisc:prim:clock_div:0 to lowrisc:prim_generic:clock_div:0.
+INFO: Mapped lowrisc:prim:clock_gating:0 to lowrisc:prim_generic:clock_gating:0.
+INFO: Mapped lowrisc:prim:ram_1p:0 to lowrisc:prim_generic:ram_1p:0.
+INFO: Mapped lowrisc:prim:buf:0 to lowrisc:prim_generic:buf:0.
+INFO: Mapped lowrisc:prim:flop:0 to lowrisc:prim_generic:flop:0.
+INFO: Mapped lowrisc:prim:prim_pkg:0 to lowrisc:prim_generic:prim_pkg:0.
+INFO: Mapped lowrisc:prim:clock_mux2:0 to lowrisc:prim_generic:clock_mux2:0.
+INFO: Mapped lowrisc:prim:clock_buf:0 to lowrisc:prim_generic:clock_buf:0.
+INFO: Mapped lowrisc:prim:flop_2sync:0 to lowrisc:prim_generic:flop_2sync:0.
+INFO: Mapped lowrisc:prim:clock_buf:0 to lowrisc:prim_generic:clock_buf:0.
+INFO: Mapped lowrisc:prim:buf:0 to lowrisc:prim_generic:buf:0.
+INFO: Mapped lowrisc:prim:pad_attr:0 to lowrisc:prim_generic:pad_attr:0.
+INFO: Mapped lowrisc:prim:clock_buf:0 to lowrisc:prim_generic:clock_buf:0.
+INFO: Mapped lowrisc:prim:flash:0 to lowrisc:prim_generic:flash:0.
+INFO: Mapped lowrisc:prim:clock_buf:0 to lowrisc:prim_generic:clock_buf:0.
+INFO: Mapped lowrisc:prim:clock_div:0 to lowrisc:prim_generic:clock_div:0.
+INFO: Mapped lowrisc:prim:clock_gating:0 to lowrisc:prim_generic:clock_gating:0.
+INFO: Mapped lowrisc:prim:clock_inv:0 to lowrisc:prim_generic:clock_inv:0.
+INFO: Mapped lowrisc:prim:prim_pkg:0 to lowrisc:prim_generic:prim_pkg:0.
+INFO: Mapped lowrisc:prim:clock_div:0 to lowrisc:prim_generic:clock_div:0.
+INFO: Mapped lowrisc:prim:clock_gating:0 to lowrisc:prim_generic:clock_gating:0.
+INFO: Mapped lowrisc:prim:buf:0 to lowrisc:prim_generic:buf:0.
+INFO: Mapped lowrisc:prim:clock_buf:0 to lowrisc:prim_generic:clock_buf:0.
+INFO: Mapped lowrisc:prim:clock_div:0 to lowrisc:prim_generic:clock_div:0.
+INFO: Mapped lowrisc:prim:clock_gating:0 to lowrisc:prim_generic:clock_gating:0.
+INFO: Mapped lowrisc:prim:clock_mux2:0 to lowrisc:prim_generic:clock_mux2:0.
+INFO: Mapped lowrisc:prim:clock_buf:0 to lowrisc:prim_generic:clock_buf:0.
+INFO: Mapped lowrisc:prim:flop_2sync:0 to lowrisc:prim_generic:flop_2sync:0.
+INFO: Mapped lowrisc:prim:clock_buf:0 to lowrisc:prim_generic:clock_buf:0.
+INFO: Mapped lowrisc:prim:buf:0 to lowrisc:prim_generic:buf:0.
+INFO: Mapped lowrisc:prim:pad_attr:0 to lowrisc:prim_generic:pad_attr:0.
+INFO: Mapped lowrisc:prim:clock_buf:0 to lowrisc:prim_generic:clock_buf:0.
+INFO: Mapped lowrisc:prim:flash:0 to lowrisc:prim_generic:flash:0.
+INFO: Mapped lowrisc:prim:flop_2sync:0 to lowrisc:prim_generic:flop_2sync:0.
+INFO: Mapped lowrisc:prim:prim_pkg:0 to lowrisc:prim_generic:prim_pkg:0.
+WARNING: Non-deterministic selection of virtual core lowrisc:virtual_constants:top_racl_pkg:0 selected lowrisc:earlgrey_constants:top_racl_pkg:0.1
+INFO: Preparing lowrisc:dv:dv_fcov_macros:0
+INFO: Preparing lowrisc:dv:dv_macros:0
+INFO: Preparing lowrisc:dv:pins_if:0
+INFO: Preparing lowrisc:dv:ralgen:0
+INFO: Preparing lowrisc:dv:rst_shadowed_if:0
+INFO: Preparing lowrisc:earlgrey_constants:top_pkg:0
+INFO: Preparing lowrisc:fpv:csr_assert_gen:0
+INFO: Preparing lowrisc:ip:jtag_pkg:0.1
+INFO: Preparing lowrisc:ip:spi_device_pkg:0.1
+INFO: Preparing lowrisc:prim:assert:0.1
+INFO: Preparing lowrisc:prim:cipher_pkg:0.1
+INFO: Preparing lowrisc:prim_generic:and2:0
+INFO: Preparing lowrisc:prim_generic:buf:0
+INFO: Preparing lowrisc:prim_generic:clock_buf:0
+INFO: Preparing lowrisc:prim_generic:clock_gating:0
+INFO: Preparing lowrisc:prim_generic:const:0
+INFO: Preparing lowrisc:prim_generic:const_sec:0
+INFO: Preparing lowrisc:prim_generic:flop:0
+INFO: Preparing lowrisc:prim_generic:flop_no_rst:0
+INFO: Preparing lowrisc:prim_generic:ram_2p_pkg:0
+INFO: Preparing lowrisc:prim_generic:xnor2:0
+INFO: Preparing lowrisc:prim_generic:xor2:0
+INFO: Preparing lowrisc:prim:pad_wrapper_pkg:0
+INFO: Preparing lowrisc:prim:secded:0.1
+INFO: Preparing lowrisc:prim:sha2_pkg:0
+INFO: Preparing lowrisc:prim:util_memload:0
+INFO: Preparing lowrisc:dv:common_ifs:0
+INFO: Preparing lowrisc:dv:str_utils:0
+INFO: Preparing lowrisc:opentitan:bus_params_pkg:0
+INFO: Preparing lowrisc:prim:blanker:0
+INFO: Preparing lowrisc:prim:cdc_rand_delay:0
+INFO: Preparing lowrisc:prim:cipher:0
+INFO: Preparing lowrisc:prim:count:0
+INFO: Preparing lowrisc:prim_generic:clock_mux2:0
+INFO: Preparing lowrisc:prim_generic:pad_wrapper:0
+INFO: Preparing lowrisc:prim_generic:ram_1r1w:0
+INFO: Preparing lowrisc:prim_generic:ram_2p:0
+INFO: Preparing lowrisc:prim:lfsr:0.1
+INFO: Preparing lowrisc:prim:mubi_pkg:0.1
+INFO: Preparing lowrisc:prim:sec_anchor:0.1
+INFO: Preparing lowrisc:prim:sha2:0
+INFO: Preparing lowrisc:prim:sparse_fsm:0
+INFO: Preparing lowrisc:prim:util:0.1
+INFO: Preparing lowrisc:dv:dv_test_status:0
+INFO: Preparing lowrisc:dv:mem_model:0
+INFO: Preparing lowrisc:ip:lc_ctrl_state_pkg:0.1
+INFO: Preparing lowrisc:prim:double_lfsr:0
+INFO: Preparing lowrisc:prim_generic:clock_inv:0
+INFO: Preparing lowrisc:prim_generic:flop_2sync:0
+INFO: Preparing lowrisc:prim_generic:flop_en:0
+INFO: Preparing lowrisc:prim:leading_one_ppc:0
+INFO: Preparing lowrisc:prim:mubi:0.1
+INFO: Preparing lowrisc:prim:onehot_check:0
+INFO: Preparing lowrisc:prim:ram_1r1w_async_adv:0.1
+INFO: Preparing lowrisc:prim:ram_2p_async_adv:0.1
+INFO: Preparing lowrisc:tlul:headers:0.1
+INFO: Preparing lowrisc:dv:dv_utils:0
+INFO: Preparing lowrisc:dv:spi_device_sva:0.1
+INFO: Preparing lowrisc:earlgrey_constants:top_racl_pkg:0.1
+INFO: Preparing lowrisc:ip:lc_ctrl_pkg:0.1
+INFO: Preparing lowrisc:prim:arbiter:0
+INFO: Preparing lowrisc:prim:diff_decode:0
+INFO: Preparing lowrisc:prim:edge_detector:0.1
+INFO: Preparing lowrisc:prim:fifo:0
+INFO: Preparing lowrisc:prim_generic:rst_sync:0
+INFO: Preparing lowrisc:prim:reg_we_check:0
+INFO: Preparing lowrisc:prim:subreg:0
+INFO: Preparing lowrisc:tlul:trans_intg:0.1
+INFO: Preparing lowrisc:dv:dv_base_reg:0
+INFO: Preparing lowrisc:prim:alert:0
+INFO: Preparing lowrisc:prim:esc:0
+INFO: Preparing lowrisc:prim:lc_sync:0.1
+INFO: Preparing lowrisc:prim:racl_error_arb:0
+INFO: Preparing lowrisc:tlul:common:0.1
+INFO: Preparing lowrisc:dv:csr_utils:0
+INFO: Preparing lowrisc:dv:sec_cm:0
+INFO: Preparing lowrisc:prim:all:0.1
+INFO: Preparing lowrisc:tlul:adapter_host:0.1
+INFO: Preparing lowrisc:tlul:adapter_reg:0.1
+INFO: Preparing lowrisc:tlul:adapter_sram:0.1
+INFO: Preparing lowrisc:tlul:lc_gate:0.1
+INFO: Preparing lowrisc:tlul:request_loopback:0.1
+INFO: Preparing lowrisc:tlul:socket_1n:0.1
+INFO: Preparing lowrisc:tlul:socket_m1:0.1
+INFO: Preparing lowrisc:tlul:sram2tlul:0.1
+INFO: Preparing lowrisc:dv:dv_lib:0
+INFO: Preparing lowrisc:tlul:adapter_racl:0.1
+INFO: Preparing lowrisc:tlul:adapter_reg_racl:0.1
+INFO: Preparing pulp-platform:riscv-dbg:0.1:0
+INFO: Preparing lowrisc:dv:alert_esc_agent:0
+INFO: Preparing lowrisc:dv:push_pull_agent:0.1
+INFO: Preparing lowrisc:dv:spi_agent:0.1
+INFO: Preparing lowrisc:dv:tl_agent:0
+INFO: Preparing lowrisc:tlul:adapter_dmi:0.1
+INFO: Preparing lowrisc:tlul:adapter_sram_racl:0.1
+INFO: Preparing lowrisc:tlul:jtag_dtm:0.1
+INFO: Preparing lowrisc:dv:cip_lib:0
+INFO: Preparing lowrisc:ip:tlul:0.1
+INFO: Preparing lowrisc:dv:spi_device_env:0.1
+INFO: Preparing lowrisc:ip:spi_device:0.1
+INFO: Preparing lowrisc:dv:spi_device_test:0.1
+INFO: Preparing lowrisc:dv:spi_device_sim:0.1
+INFO: Generating lowrisc:dv:spi_device_sva-csr_assert_gen:0.1
+INFO: Generating lowrisc:dv:spi_device_env-ral:0.1
+Calling tool in ralgen.py: /home/justin/work/opentitan/hw/dv/tools/ralgen/../../../../util/regtool.py -s -t /home/justin/work/opentitan/scratch/master/spi_device_1r1w-sim-vcs/cover_reg_top/fusesoc-work/generator_cache/lowrisc_dv_spi_device_env-ral_0.1-5b585251e56b41f054d2232a70d456f357bb226e7a2520597852cbe383c2bbba /home/justin/work/opentitan/hw/ip/spi_device/dv/env/../../data/spi_device.hjson
+RAL pkg for spi_device written to /home/justin/work/opentitan/scratch/master/spi_device_1r1w-sim-vcs/cover_reg_top/fusesoc-work/generator_cache/lowrisc_dv_spi_device_env-ral_0.1-5b585251e56b41f054d2232a70d456f357bb226e7a2520597852cbe383c2bbba.
+INFO: Setting up project
+
+[make]: build
+cd /home/justin/work/opentitan/scratch/master/spi_device_1r1w-sim-vcs/cover_reg_top/fusesoc-work && vcs +define+SRAM_TYPE=spi_device_pkg::SramType1r1w +define+UVM +define+UVM_NO_DEPRECATED +define+UVM_REGEX_NO_DPI +define+UVM_REG_ADDR_WIDTH=32 +define+UVM_REG_DATA_WIDTH=32 +define+UVM_REG_BYTENABLE_WIDTH=4 +define+SIMULATION +define+DUT_HIER=tb.dut -sverilog -full64 -licqueue -ntb_opts uvm-1.2 -timescale=1ns/1ps -Mdir=/home/justin/work/opentitan/scratch/master/spi_device_1r1w-sim-vcs/cover_reg_top/simv.csrc -o /home/justin/work/opentitan/scratch/master/spi_device_1r1w-sim-vcs/cover_reg_top/simv -f /home/justin/work/opentitan/scratch/master/spi_device_1r1w-sim-vcs/cover_reg_top/fusesoc-work/lowrisc_dv_spi_device_sim_0.1.scr  -lca -top spi_device_bind -top sec_cm_prim_onehot_check_bind -top tb +incdir+/home/justin/work/opentitan/scratch/master/spi_device_1r1w-sim-vcs/cover_reg_top +warn=SV-NFIVC +warn=noUII-L +warn=noLCA_FEATURES_ENABLED +warn=noBNA -assert svaext -xlrm uniq_prior_final -Xcflags='-Wno-error=implicit-function-declaration -Wno-error=int-conversion' -CFLAGS --std=c99 -CFLAGS -fno-extended-identifiers -CFLAGS --std=c++17 -LDFLAGS -Wl,--no-as-needed -debug_region=cell+lib -debug_access+f +define+VCS -error=IPDW -error=UPF_ISPND -error=IGPA -error=PCSRMIO -error=AOUP -error=ELW_UNBOUND -error=IUWI -error=INAV -error=SV-ISC -error=OSVF-NPVIUFPI -error=DPIMI -error=IPDASP -error=CM-HIER-FNF -error=CWUC -error=MATN -error=STASKW_NDTAZ1 -error=TMPO -error=SV-OHCM -error=ENUMASSIGN -error=TEIF -deraceclockdata -kdb -debug_access
+bash: line 1: vcs: command not found
+make: *** [/home/justin/work/opentitan/hw/dv/tools/dvsim/sim.mk:36: do_build] Error 127

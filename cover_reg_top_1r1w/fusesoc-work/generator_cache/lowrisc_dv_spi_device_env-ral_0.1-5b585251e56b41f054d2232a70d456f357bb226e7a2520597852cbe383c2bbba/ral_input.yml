@@ -1,0 +1,6 @@
+files_root: /home/justin/work/opentitan/hw/ip/spi_device/dv/env
+gapi: '1.0'
+parameters:
+  name: spi_device
+  ip_hjson: ../../data/spi_device.hjson
+vlnv: lowrisc:dv:spi_device_env-ral:0.1

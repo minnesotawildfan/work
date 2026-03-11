@@ -1,0 +1,5 @@
+files_root: /home/justin/work/opentitan/hw/ip/spi_device/dv/sva
+gapi: '1.0'
+parameters:
+  spec: ../../data/spi_device.hjson
+vlnv: lowrisc:dv:spi_device_sva-csr_assert_gen:0.1
